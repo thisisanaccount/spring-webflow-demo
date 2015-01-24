@@ -9,11 +9,8 @@
         http://www.springframework.org/schema/webflow-config
         http://www.springframework.org/schema/webflow-config/spring-webflow-config.xsd
         ">
-
-	<webflow:flow-registry
-		id="flowRegistry"
-		base-path="/WEB-INF/spring-config/flows">
-		<webflow:flow-location-pattern value="/**/*.xml" />
+	<webflow:flow-registry id="flowRegistry">
+		<webflow:flow-location-pattern value="/WEB-INF/spring-webflow/*.xml" />
 	</webflow:flow-registry>
 
 	<webflow:flow-executor id="flowExecutor" />
